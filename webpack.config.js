@@ -1,14 +1,14 @@
 var webpack = require('webpack');
 
 module.exports = {
-	entry: './app/Main.jsx',
+	entry: './app/components/Main.js',
 	output: {
 		path: './app',
 		filename: 'bundled.js'
 	},
 	module: {
 		loaders: [{
-			test: /\.jsx?$/, 
+			test: /\.js?$/, 
 			exclude: /(node_modules|bower_components)/, 
 			loader: 'babel'
 		}]
